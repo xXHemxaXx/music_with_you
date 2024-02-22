@@ -4,22 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/style.min.css">
-    <title>Music With You</title>
+    <script src="script/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
+    <title>Exercice </title>
 </head>
 <body>
-    
-    <header></header> 
-    <main>
-        <div class="buttons">
-            <button type="button" data-music="artist" class="btn">Artiste</button>
+    <header>
+        <div class="searchbar_blackbckgrd">
+            <div class="searchbar">
+                <form action="">
+                    <input type="text" placeholder="Artistes, albums, morceaux, etc.">
+                    <button type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <nav class="navbar_header">
+            <div class="navcenter">
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-solid fa-house"></i></div>
+                        <span>Accueil</span>
+                    </a>
+                </div>
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-solid fa-globe"></i></div>
+                        <span>Explorer</span>
+                    </a>
+                </div>
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-regular fa-heart"></i></div>
+                        <span>Favoris</span>
+                    </a>
+                </div>
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-solid fa-user"></i></div>
+                        <span>Profil</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="deezer_logo"><a href=""><img src="images/Logo_Deezer_2023.svg" alt="deezer_logo"></a>
+        </div>
+        <div class="buttonszone">
+            <div class="buttons">
+                <button type="button" data-music="artist" class="btn">Artiste</button>
             <button type="button" data-music="album" class="btn">Album</button>
             <button type="button" data-music="playlist" class="btn">Playlist</button>
             <button type="button" data-music="style" class="btn">Genre</button>
             <button type="button" data-music="radio" class="btn">Radio</button>
+            </div>
         </div>
-
-
-    </main>   
+        
+    </header> 
+    <main></main>   
     <footer></footer>
 
     <script src="script/main.js" ></script>
