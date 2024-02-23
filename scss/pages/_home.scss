@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin transition($duree : .3s, $effet : ease-in-out){
     transition: $duree all $effet;
 }
@@ -29,3 +30,169 @@
     width: 100%;
     height: 100%;
 }
+=======
+/*******
+** MAIN **
+*********/
+
+// Parametres Scrollbar Color
+html {
+    scrollbar-color: #9f9f9f #2c2c2c;
+}
+
+body{
+    background-color: #1f1f1f;
+}
+
+.wrapper{
+    padding: 20px;
+}
+
+.container-swiper-banner{
+    margin-bottom: 48px;
+    .ligne{
+        border: 1px solid #9f9f9f;
+    }
+    .container-swiper {
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 300px;
+                .container-swiper-txt{
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                }
+                img{
+                    width: 100%;
+                    height: 170px;
+                    border-radius: 8px;
+                    transition: 0.3s all ease-in-out;
+                }
+                &:hover{
+                    img{
+                        filter: grayscale(0.5);
+                        transition: 0.3s all ease-in-out;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.container-swiper-album{
+    margin-bottom: 48px;
+    margin-bottom: 48px;
+    .container-swiper {
+        width: 100%;
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 140px;
+                .container-swiper-img{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                        border-radius: 8px;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    .container-svg-play{
+                        display: none;
+                    }
+                }
+                .container-swiper-txt{
+                    margin-bottom: 10px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &:hover{
+                    .container-swiper-img{
+                        img{
+                            filter: grayscale(0.5);
+                            transition: 0.3s all ease-in-out;
+                        }
+                        .container-svg-play{
+                            position: absolute;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 25px;
+                            background: rgba(92,86,86,0.938813025210084);
+                            bottom: 10px;
+                            left: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &:hover{
+                                background-color: #ff4136;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+.container-swiper-album-double{
+    margin-bottom: 48px;
+    margin-bottom: 48px;
+    .container-swiper {
+        width: 100%;
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 140px;
+                .container-swiper-img{
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    position: relative;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                        border-radius: 8px;
+                        transition: 0.3s all ease-in-out;
+                    }
+                    .container-svg-play{
+                        display: none;
+                    }
+                }
+                .container-swiper-txt{
+                    margin-bottom: 10px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &:hover{
+                    .container-swiper-img{
+                        img{
+                            filter: grayscale(0.5);
+                            transition: 0.3s all ease-in-out;
+                        }
+                        .container-svg-play{
+                            position: absolute;
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 25px;
+                            background: rgba(92,86,86,0.938813025210084);
+                            bottom: 10px;
+                            left: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            &:hover{
+                                background-color: #ff4136;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+>>>>>>> 104a7290a92e6b6b87050249f7a9474a53422c3f
