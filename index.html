@@ -3,17 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/style.min.css">
+
     <!-- link plug-in css swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="script/swiper.js" defer></script>
+    <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
     <!-- favicon-Apple -->
     <link href="./img/apple-music-2020-09-25.png" style="border-radius: 15px;" rel="icon" sizes="32x32" type="image/png">
-    <title>Deezer</title>
+    <!-- link fontawsome-->
+    <script src="https://kit.fontawesome.com/3379e155de.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="scss/style.min.css">
+    <script src="script/main.js" defer></script>
+    
+    <title>Music With You</title>
 </head>
 <body>
     
-    <header></header> 
+    <header>
+        <div class="searchbar_blackbckgrd">
+            <div class="searchbar">
+                <form action="" id="search">
+                    <input type="text" placeholder="Artistes, albums, morceaux, etc.">
+                    <button type="submit">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <nav class="navbar_header">
+            <div class="navcenter">
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-solid fa-house"></i></div>
+                        <span>Accueil</span>
+                    </a>
+                </div>
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-solid fa-globe"></i></div>
+                        <span>Explorer</span>
+                    </a>
+                </div>
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-regular fa-heart"></i></div>
+                        <span>Favoris</span>
+                    </a>
+                </div>
+                <div class="a_nav">
+                    <a href="">
+                        <div><i class="fa-solid fa-user"></i></div>
+                        <span>Profil</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="deezer_logo"><a href=""><img src="img/Logo_Deezer_2023.svg" alt="deezer_logo"></a>
+        </div>
+        <div class="buttonszone">
+            <div class="buttons">
+                <button type="button" data-music="artist" class="btn">Artiste</button>
+                <button type="button" data-music="album" class="btn">Album</button>
+                <button type="button" data-music="playlist" class="btn">Playlist</button>
+                <button type="button" data-music="style" class="btn">Genre</button>
+                <button type="button" data-music="radio" class="btn">Radio</button>
+            </div>
+        </div>
+    </header> 
+
     <main class="wrapper">
         <section class="container-swiper-banner">
             <div>
