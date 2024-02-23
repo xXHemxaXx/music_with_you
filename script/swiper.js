@@ -12,7 +12,7 @@ let number = 2
 // })
 
 // swiper-banner
-var swiper = new Swiper(".mySwiper", {
+var swiperBanner = new Swiper(".mySwiper-banner", {
     slidesPerView: 3,
     spaceBetween: 20,
     width: 950,
@@ -32,7 +32,7 @@ var swiperAlbum = new Swiper(".mySwiper-album", {
 
 // swiper-album-double
 var swiperDoubleAlbum = new Swiper(".mySwiper-double", {
-    slidesPerView: 3,
+    slidesPerView: 2,
     spaceBetween: 20,
     grid: {
         rows:2,
