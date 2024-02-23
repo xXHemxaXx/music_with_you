@@ -28,7 +28,14 @@ p{
     font-size: 11px;
 }
 
-a{
-    color: #000;
-    text-decoration: none;
+footer{
+    p{
+        color: #9f9f9f;
+    }
+    a{
+        color: #9f9f9f;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
 }
