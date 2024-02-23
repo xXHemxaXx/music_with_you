@@ -50,19 +50,27 @@ header{
         
     }  
 }
-.deezer_logo{
+.logobackgrnd{
+    background-color: #fff;
+    width: 100vw;
+    padding: 5px 0;
+    .deezer_logo{
     margin: 30px auto;
     width: 250px;
     margin-bottom: 40px;
+    background-color: #fff;
 }
+}
+
 .navbar_header{
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
     background-color: #000;
+    z-index: 2;
     @media screen and (min-width:1000px){
-        position: fixed;
+        position: absolute;
         top: 5px;
         right: 0;
         bottom: auto;
