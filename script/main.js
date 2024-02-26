@@ -55,19 +55,41 @@ function handleScroll(){
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('resize', handleScroll);
 
+//Dark and Pink Mode
+let body = document.querySelector("body")
+let buttonChangeColor = document.querySelector("#colorButton")
 
-//   window.addEventListener('scroll', function(){
-//     if (window.innerWidth > 1000){
-//       let dejaScrollay = window.scrollY
-//       if (dejaScrollay > newScrollay){
-//           navbar.classList.add("slide")
-//       } else {
-//           navbar.classList.remove("slide")
-//       }
-//       newScrollay = dejaScrollay  
-//     }
-//       l 
-//   })
+function changeBodyColor(color){
+  body.style.backgroundColor = color;
+}
+
+if (localStorage.getItem('bodyColor')){
+  changeBodyColor(localStorage.getItem('bodyColor'));
+  buttonChangeColor.textContent = 'Dark Mode'
+  buttonChangeColor.style.backgroundColor = 'black'
+  buttonChangeColor.style.color = 'white'
+}
+
+buttonChangeColor.addEventListener('click', function(){
+  if (body.style.backgroundColor === 'pink'){
+    changeBodyColor('grey');
+    localStorage.removeItem('bodyColor')
+    this.textContent = 'Pink Mode'
+    buttonChangeColor.style.backgroundColor = 'pink'
+    buttonChangeColor.style.color = 'black'
+  } else {
+    changeBodyColor('pink');
+    localStorage.setItem('bodyColor', 'pink')
+    this.textContent = 'Dark Mode'
+    buttonChangeColor.style.backgroundColor = 'black'
+    buttonChangeColor.style.color = 'white'
+  }
+
+})
+
+
+
+
 
  
 
