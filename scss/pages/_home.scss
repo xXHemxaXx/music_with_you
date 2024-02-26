@@ -4,21 +4,23 @@
 
 // Parametres Scrollbar Color
 html {
-    scrollbar-color: #9f9f9f #2c2c2c;
+    scrollbar-color: #ffc0cb #9951b3;
 }
 
 body{
-    background-color: #1f1f1f;
+    background-color: #ffc0cb;
 }
 
 .wrapper{
     padding: 20px;
 }
 
+// Acceuil
+
 .container-swiper-banner{
     margin-bottom: 48px;
     .ligne{
-        border: 1px solid #9f9f9f;
+        border: 1px solid #ce0a0e;
     }
     .container-swiper {
         .swiper-wrapper{
@@ -52,12 +54,14 @@ body{
     .container-swiper {
         width: 100%;
         .swiper-wrapper{
+            width: 140px;
             .swiper-slide{
                 width: 140px;
                 .container-swiper-img{
                     margin-top: 10px;
                     margin-bottom: 10px;
                     position: relative;
+                    width: 140px;
                     img{
                         width: 140px;
                         height: 140px;
@@ -93,7 +97,7 @@ body{
                             justify-content: center;
 
                             &:hover{
-                                background-color: #ff4136;
+                                background-color: #ffc0cb;
                             }
                         }
                     }
@@ -104,63 +108,75 @@ body{
     }
 }
 
-.container-swiper-album-double{
-    margin-bottom: 48px;
-    margin-bottom: 48px;
-    .container-swiper {
+.container-best{
+    margin-bottom: 50px;
+    width: 100%;
+    .container-colomuns{
+        display: flex;
         width: 100%;
-        .swiper-wrapper{
-            .swiper-slide{
-                width: 140px;
-                height: calc((100% - 30px) / 2) !important;
-                .container-swiper-img{
-                    margin-top: 10px;
-                    margin-bottom: 10px;
+    }
+    .container-best-box{
+        width: 260px;
+        margin-right: 25px;
+        .container-best-element{
+            .ligne{
+                border: 1px solid #ce0a0e;
+                width: 100%;
+            }
+            .container-best-content{
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                .container-best-txt{
+                    width: 170px;
+                    overflow: hidden;
+                }
+                .container-best-img{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 20px;
                     position: relative;
                     img{
-                        width: 140px;
-                        height: 140px;
-                        border-radius: 8px;
-                        transition: 0.3s all ease-in-out;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        
                     }
                     .container-svg-play{
                         display: none;
                     }
                 }
-                .container-swiper-txt{
-                    margin-bottom: 10px;
-                    &:hover{
-                        text-decoration: underline;
+            }
+            &:hover{
+                .container-best-img{
+                    .container-svg-play{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 5px;
+                        background: rgba(92,86,86,0.5);
+                        left: 0;
+                        top: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                 }
-                &:hover{
-                    .container-swiper-img{
-                        img{
-                            filter: grayscale(0.5);
-                            transition: 0.3s all ease-in-out;
-                        }
-                        .container-svg-play{
-                            position: absolute;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 25px;
-                            background: rgba(92,86,86,0.938813025210084);
-                            bottom: 10px;
-                            left: 10px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            &:hover{
-                                background-color: #ff4136;
-                            }
-                        }
+                .container-best-txt{
+                    p{
+                        text-decoration: underline;
                     }
                 }
                 
             }
         }
     }
+    .swiper-slide{
+        width: 260px;
+    }
 }
+
 
 .container-Explore{
     display: flex;
@@ -169,9 +185,19 @@ body{
     margin-bottom: 25px;
     margin-top: 15px;
     div{
-        background-color: #f2f2f2;
+        background-color: #9951b3;;
         border-radius: 10px;
         padding: 20px;
     }
 }
+
+// Page-album
+
+
+.container-album{
+    .container-img{
+        
+    }
+}
+
 
