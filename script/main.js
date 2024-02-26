@@ -33,3 +33,53 @@ myBtns.addEventListener('click', function(e){
 
   }
 })
+
+//scroll au menu
+let navbar = document.querySelector(".navbar")
+let lastScrollay = 0
+
+function handleScroll(){
+  if (window.innerWidth > 1000){
+    let dejaScrollay = Math.max(window.scrollY, 0)
+    if (dejaScrollay > lastScrollay){
+      navbar.classList.add("slide")
+      
+    } else {
+      navbar.classList.remove("slide")
+    }
+    lastScrollay = dejaScrollay
+    
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', handleScroll);
+
+
+//   window.addEventListener('scroll', function(){
+//     if (window.innerWidth > 1000){
+//       let dejaScrollay = window.scrollY
+//       if (dejaScrollay > newScrollay){
+//           navbar.classList.add("slide")
+//       } else {
+//           navbar.classList.remove("slide")
+//       }
+//       newScrollay = dejaScrollay  
+//     }
+//       l 
+//   })
+
+ 
+
+
+
+
+
+// fetch(`https://deezerdevs-deezer.p.rapidapi.com/infos?rapidapi-key=19b3d652a3msh4937caeed36c230p1b3c54jsn1da2ad719459&rapidapi-host=deezerdevs-deezer.p.rapidapi.com`)
+//   .then(response => response.json())
+//   .then(data => {
+//     console.log(data);
+    
+//   })
+//   .catch(error => {console.log("Erreur lors de la récup des données :", error);
+// })
