@@ -15,7 +15,8 @@ body{
     padding: 20px;
 }
 
-// Acceuil
+
+// Parametres Swipper
 
 .container-swiper-banner{
     margin-bottom: 48px;
@@ -37,19 +38,15 @@ body{
                     transition: 0.3s all ease-in-out;
                 }
                 &:hover{
-                    img{
-                        filter: grayscale(0.5);
-                        transition: 0.3s all ease-in-out;
-                    }
+                    filter: grayscale(0.5);
+                    transition: 0.3s all ease-in-out;
                 }
-                
             }
         }
     }
 }
 
 .container-swiper-album{
-    margin-bottom: 48px;
     margin-bottom: 48px;
     .container-swiper {
         width: 100%;
@@ -95,7 +92,6 @@ body{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-
                             &:hover{
                                 background-color: #ffc0cb;
                             }
@@ -189,6 +185,7 @@ body{
         border-radius: 10px;
         padding: 20px;
     }
+
 }
 
 // Page-album
@@ -199,5 +196,4 @@ body{
         
     }
 }
-
 
