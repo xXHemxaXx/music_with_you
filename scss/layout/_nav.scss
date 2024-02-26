@@ -1,6 +1,13 @@
 header{
     text-align: center; 
 }
+.navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    transition: ease-in-out 0.5s;
+    z-index: 100;
+}
 
 .searchbar_blackbckgrd{
     background-color: #000;
@@ -53,7 +60,7 @@ header{
 .logobackgrnd{
     background-color: #fff;
     width: 100vw;
-    padding: 5px 0;
+    padding: 95px 0 5px 0;
     .deezer_logo{
     margin: 30px auto;
     width: 250px;
