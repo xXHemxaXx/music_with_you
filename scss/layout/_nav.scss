@@ -61,12 +61,21 @@ header{
     background-color: #fff;
     width: 100vw;
     padding: 95px 0 5px 0;
+    position: relative;
     .deezer_logo{
     margin: 30px auto;
     width: 250px;
     margin-bottom: 40px;
     background-color: #fff;
-}
+    }
+    #colorButton{
+        position: absolute;
+        top: 58%;
+        right: 5%;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 5px;
+    }
 }
 
 .navbar_header{
