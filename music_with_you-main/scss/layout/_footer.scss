@@ -1,0 +1,34 @@
+footer{
+    background-color: #9951b3;
+    font-size: 11px;
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        // margin-bottom: 70px;
+        // @media screen {
+            
+        // }
+        // .top-footer{
+        //     display: flex;
+        //     margin-bottom: 25px;
+        //     div{
+        //         margin: 0 15px 0 15px;
+        //     }
+        }
+    .middle-footer{
+        margin: 0 auto;
+        // display: flex;
+        margin-bottom: 5px;
+        a{
+            color: antiquewhite;
+        }
+    }
+    // .bottom-footer{
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     div{
+    //         margin: 0 15px 0 15px;
+    //     }
+    // }
+}

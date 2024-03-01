@@ -1,0 +1,41 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3{
+    color: #000;
+}
+
+h2, h3{
+    margin: 0;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 12px;
+}
+
+p{
+    color: #fff;
+    margin: 0;
+}
+.container-Explore{
+    div{
+        color: #ffc0cb;
+    }
+}
+
+footer{
+    p{
+        color: #741b1e;
+    }
+    a{
+        color: #ffc0cb;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
